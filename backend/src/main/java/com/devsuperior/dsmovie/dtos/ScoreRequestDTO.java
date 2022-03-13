@@ -1,31 +1,31 @@
 package com.devsuperior.dsmovie.dtos;
 
 public class ScoreRequestDTO {
-  private Long movieID;
+  private Long movieId;
   private String email;
   private Double score;
 
   public ScoreRequestDTO() {
   }
 
-  // public ScoreRequestDTO(Long movieID, String email, Double score) {
-  // this.movieID = movieID;
+  // public ScoreRequestDTO(Long movieId, String email, Double score) {
+  // this.movieId = movieId;
   // this.email = email;
   // this.score = score;
   // }
 
   // public ScoreRequestDTO(Score entity) {
-  // movieID = entity.getId().getMovie().getId();
+  // movieId = entity.getId().getMovie().getId();
   // email = email;
   // score = score;
   // }
 
-  public Long getMovieID() {
-    return movieID;
+  public Long getMovieId() {
+    return movieId;
   }
 
-  public void setMovieID(Long movieID) {
-    this.movieID = movieID;
+  public void setMovieId(Long movieId) {
+    this.movieId = movieId;
   }
 
   public String getEmail() {
