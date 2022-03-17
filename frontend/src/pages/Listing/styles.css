@@ -1,0 +1,29 @@
+
+.is-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 85vh;
+}
+
+.is-loading .c-loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  animation: is-rotating 1s infinite;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  border: 0.5rem solid #bdbbbb;
+  border-top: 0.5rem solid var(--color-primary);
+}
+
+
+@keyframes is-rotating {
+  to {
+    transform: rotate(1turn);
+  }
+}
