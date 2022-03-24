@@ -29,23 +29,7 @@ export function Listing() {
       .then(response => {
         const data: MoviePage = response.data;
         setPage(data);
-
-        if (!data.empty) {
-          // setIsEmpty(false);
-          console.log("## LOG 1 ##");
-          console.log("data: ", data);
-          console.log(`isEmpty: ${data.empty}`);
-          // console.log("setPage: ", setPage);
-          console.log("#### \n");
-        }
         setIsEmpty(data.empty);
-
-
-        console.log("## LOG 2 ##");
-        console.log("data: ", data);
-        console.log(`isEmpty: ${data.empty}`);
-        // console.log("setPage: ", setPage);
-        console.log("####");
       });
   }, [pageNumber]);
 
